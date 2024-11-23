@@ -36,10 +36,6 @@ section {
   max-height: 50rem;
   padding: 1.5rem;
 }
-.flex {
-  display: flex;
-  align-items: center;
-}
 /* --------------------------------------------header----------------------------------------------- */
 .header {
   display: flex;
@@ -109,8 +105,8 @@ nav ul li a:hover {
   position: absolute;
   content: "";
   bottom: 20px;
-  left: 47%;
-  width: 5%;
+  left: 43%;
+  width: 13%;
   height: 2px;
   position: absolute;
   background-color: black;
@@ -197,25 +193,40 @@ nav ul li a:hover {
 /* --------------------------------------------Footer--------------------------------------------------- */
 
 .footer {
-  border-top: 2px solid black;
-  font-size: 12px;
-  font-weight: var(--fw-600);
+  border-width: 100%;
+
+  font-size: 16px;
+  font-weight: var(--fw-500);
 }
 
 .footer-info {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid black;
   align-items: center;
   justify-content: space-between;
 }
-.footer-text {
+.footer-info span {
   gap: 10px;
 }
-.footer-text img {
+.footer-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.footer-info img {
   height: 20px;
   width: 20px;
+}
+.footer-extra p {
+  letter-spacing: 1.1;
+  padding-inline: 5px;
 }
 .footer-extra span {
   color: var(--Orange);
 }
+
 /* --------------------------------------------media queries--------------------------------------------------- */
 
 @media (max-width: 769px) {
@@ -246,7 +257,7 @@ nav ul li a:hover {
 
   .logo-img img {
     height: 10vh;
-    width: 25vw;
+    width: 36vw;
     margin: 0.4rem 0.9rem;
   }
   #checkbtn {
@@ -259,7 +270,7 @@ nav ul li a:hover {
     height: 55vh;
     background-color: rgb(245, 242, 242);
     position: fixed;
-    top: 70px;
+    top: 83px;
     left: -100%;
   }
 
@@ -297,9 +308,9 @@ nav ul li a:hover {
     overflow-x: hidden;
   }
   .footer-info {
+    font-size: 12px;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
   }
 }
 
